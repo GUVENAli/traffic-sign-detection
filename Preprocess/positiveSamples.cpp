@@ -56,6 +56,7 @@ void posList(string text)
 	i = 0;
 	while (!myFile.eof())
 	{
+		ind = 0;
 		stringstream ss;
 		getline(myFile, STRING); 
 		if (STRING.find(temp) != string::npos)
@@ -106,7 +107,8 @@ void posList(string text)
 					cout << j << " ";
 				}
 			}
-			posFile << x2 << " " << y2 << " " << x1 - x2 << " " << y1 - y2;
+			posFile << x2 << " " << y2 << " " << x1 - x2 - 2 << " " << y1 - y2 - 2;
+			ind = 1;
     		//cout << IMAGE_NAME << " " << TEMP_STRING << " ";
 		}
 		else
@@ -161,7 +163,8 @@ void posList(string text)
 					cout << j << " ";
 				}
 			}
-			posFile << x2 << " " << y2 << " " << x1 - x2 << " " << y1 - y2;
+			posFile << " " << x2 << " " << y2 << " " << x1 - x2 - 2 << " " << y1 - y2 - 2;
+			
     		//cout << SRC_PATH << " ";
     		//posFile << SRC_PATH << " ";
     		if (SRC_PATH.length() <= 0)
