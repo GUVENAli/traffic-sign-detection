@@ -15,3 +15,6 @@ The format must be like that \
 Opencv uses two subsets for training which are negative samples and positive samples. 
 * Negative samples contain no object/objects. 
 * Positive samples include one or more objects.
+
+# Obtaining Different Positive Samples from positiveSamples.cpp Code
+Just change **_temp_** variable in the posList method in the code.
