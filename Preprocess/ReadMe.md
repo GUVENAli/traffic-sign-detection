@@ -18,3 +18,7 @@ Opencv uses two subsets for training which are negative samples and positive sam
 
 # Obtaining Different Positive Samples from positiveSamples.cpp Code
 Just change **_temp_** variable in the posList method in the code.
+
+# Assumptions
+* Set1Part0 or the folder that contains training images must be in same directory of the code.
+* Named **_neg_** and **_pos_** folders must be created in the directory.
