@@ -1,7 +1,7 @@
 # traffic-sign-detection
 
 ## Requirements
-* Opencv == 3.4
+* OpenCV == 3.4
 * C++
 
 ## Operating System
