@@ -51,7 +51,7 @@ void posList(string text)
     string temp = "70_SIGN";
     ifstream myFile;
     ofstream posFile;
-    posFile.open("pos.txt");
+    posFile.open("pos.info");
 	myFile.open(text.c_str());
 	i = 0;
 	while (!myFile.eof())
@@ -183,7 +183,7 @@ void posList(string text)
     cout << endl;
     cout << "Done. Total positive images: " << x << endl;
     cout << "Positive images were saved in pos/ folder!"<< endl;
-    cout << "The list of directories of positive images was saved in pos.txt file!"<< endl;
+    cout << "The list of directories of positive images was saved in pos.info file!"<< endl;
 }
 
 int main()
