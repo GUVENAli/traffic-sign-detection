@@ -62,7 +62,7 @@ int main()
 
     double scale = 1.1;
     int minN = 2;
-    string path = "D:/FordOtosan/annotations_test.txt";
+    string path = "annotations_test.txt";
     ifstream myFile;
     string STRING, IMAGE_NAME, IMG_PATH;
     myFile.open(path.c_str());
@@ -71,7 +71,7 @@ int main()
         getline(myFile, STRING);
         IMAGE_NAME = STRING.substr(0, STRING.find(":"));
 
-        IMG_PATH = "D:/FordOtosan/Set2Part0/" + IMAGE_NAME;
+        IMG_PATH = "Set2Part0/" + IMAGE_NAME;
 
         Mat img = imread(IMG_PATH.c_str());
 
